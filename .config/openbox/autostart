@@ -1,0 +1,16 @@
+# xrdb -merge ~/.Xresources &
+nitrogen --restore &
+xcompmgr -cCfF -t-5 -l-5 -r4.2 -o.55 -D6 &
+parcellite &
+jupiter &
+tint2 &
+# wicd-gtk --tray&
+nm-applet &
+volumeicon &
+/home/arch/bin/urxvt-desktop &
+/usr/lib/notification-daemon-1.0/notification-daemon start &
+if egrep -iq 'touchpad' /proc/bus/input/devices; then
+    synclient VertEdgeScroll=1 &
+    synclient TapButton1=1 &
+fi
+conky &
