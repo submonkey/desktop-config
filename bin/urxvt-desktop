@@ -1,0 +1,3 @@
+#!/bin/bash
+
+$HOME/bin/urxvtdc -name urxvt-desktop -depth 32 -bg rgba:0000/0000/0000/0000 -fade 0 -geometry 155x30 -e tmux
