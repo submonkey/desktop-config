@@ -1,0 +1,23 @@
+[Finch]
+color-available         = blue; default
+color-away              = white; default
+color-idle              = dark-gray; default
+color-offline           = light-gray; default
+color-message-sent      = blue; default
+color-message-received  = dark-gray; default
+color-message-highlight = white; black
+color-message-action    = blue; default
+color-timestamp         = blue; default
+
+[general]
+shadow                  = 0
+wm                      = /usr/local/lib/gnt/s.so
+remember_position       = 1
+small-button            = true
+
+[colors]
+# The RGB values range [0, 1000]
+blue                    = 90; 576; 820
+white                   = 1000; 1000; 1000
+dark-gray               = 200; 200; 200
+light-gray              = 600; 600; 600
