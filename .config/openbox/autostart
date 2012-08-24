@@ -1,16 +1,25 @@
-# xrdb -merge ~/.Xresources &
+# set wallpaper
 nitrogen --restore &
+# composite manager
 xcompmgr -cCfF -t-5 -l-5 -r4.2 -o.55 -D6 &
+# clipboard manager
 parcellite &
+# power manager
 jupiter &
+# desktop panel
 tint2 &
-# wicd-gtk --tray&
-nm-applet &
+# network manager applet
+nm-applet --sm-disable &
+# volume icon
 volumeicon &
+# desktop terminal
 /home/arch/bin/urxvt-desktop &
+# daemon for send notification
 /usr/lib/notification-daemon-1.0/notification-daemon start &
+# touchpad config
 if egrep -iq 'touchpad' /proc/bus/input/devices; then
     synclient VertEdgeScroll=1 &
     synclient TapButton1=1 &
 fi
+# conky, status manager
 conky &

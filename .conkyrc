@@ -1,5 +1,5 @@
 alignment top_right
-background yes
+background no
 cpu_avg_samples 2
 default_color 000000		
 default_outline_color 000000 	
@@ -62,7 +62,7 @@ ${font pftempestafivecondensed:size=6}
                  Dl:${downspeed wlan0}
 
 ${hr}
-icub@${nodename}
+${exec whoami}@${nodename}
 Archlinux $machine
 $kernel
 ${hr}
